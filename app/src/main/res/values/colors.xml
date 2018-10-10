@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="whitecolor1">#435965</color>
+    <color name="whitecolor">#ffffff</color>
+    <color name="bghome1">#202b31</color>
+    <color name="appbarhomecolor">#141d22</color>
+    <color name="color_mail">#b6b6b6</color>
+    <color name="color_num">#53a11a</color>
+    <color name="color_view1">#ff226c</color>
+    <color name="color_view2">#352aff</color>
+    <color name="color_view3"> #9aff0d</color>
+    <color name="points_colors">#b6b6b6</color>
+    <color name="colorscams">#fff200</color>
+    <color name="bgbtn_button">#75bc14</color>
+    <color name="bgbtn_buttoncreate">#5e545454</color>
+    <color name="color_roundes_edit_text">#68ffffff</color>
 </resources>
