@@ -5,7 +5,6 @@ import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.EditText
 import android.widget.Toast
 import com.decoled.codering.githubkotlin.Api.GithubApiService
 import kotlinx.android.synthetic.main.activity_main.*
@@ -24,8 +23,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Callback<Respons
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btn_login!!.setOnClickListener(this)
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/login/oauth/authorize?client_id=" +
-                "$clientID&scope=repo&redirect_uri=$redirectUri"))
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/login/oauth/authorize?client_id=" + "$clientID&scope=repo&redirect_uri=$redirectUri"))
         startActivity(intent)
     }
 
@@ -48,7 +46,5 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Callback<Respons
 
     override fun onResume() {
         super.onResume()
-        //var url = intent.data
     }
-
 }
