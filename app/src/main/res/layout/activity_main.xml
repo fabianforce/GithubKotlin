@@ -1,114 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:id="@+id/LinearLayout01"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:background="@drawable/img1"
-              android:orientation="vertical">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/pagding_login">
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-        <ImageView
-            android:id="@+id/svg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"/>
-
-        <TextView
-            android:id="@+id/txtv_user"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/svg"
-            android:layout_alignStart="@+id/txt_user"
-            android:layout_marginTop="@dimen/margintop_username"
-            android:layout_marginBottom="@dimen/marginbottom_username"
-            android:text="@string/label_user"
-            android:textColor="@color/whitecolor"
-            android:textSize="@dimen/fontsize_login"/>
-
-        <EditText
-            android:id="@+id/txt_user"
-            android:layout_width="@dimen/width_txt_login"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtv_user"
-            android:layout_centerHorizontal="true"
-            android:background="@color/coloredittextlogin"
-            android:hint="@string/hint_userna"
-            android:padding="@dimen/padding_txt_login"
-            android:textColor="@color/whitecolor"
-            android:textColorHint="@color/whitecolor"/>
-
-        <TextView
-            android:id="@+id/txtv_pass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_user"
-            android:layout_alignStart="@+id/passwordInput"
-            android:layout_marginTop="@dimen/margintop_username"
-            android:layout_marginBottom="@dimen/marginbottom_username"
-            android:text="@string/label_passw"
-            android:textColor="@color/whitecolor"
-            android:textSize="@dimen/fontsize_login"/>
-
-        <EditText
-            android:id="@+id/passwordInput"
-            android:layout_width="@dimen/width_txt_login"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtv_pass"
-            android:layout_centerHorizontal="true"
-            android:background="@color/coloredittextlogin"
-            android:hint="@string/hint_txtpass"
-            android:inputType="textPassword"
-            android:padding="@dimen/padding_txt_login"
-            android:textColor="@color/whitecolor"/>
-
-
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="@dimen/width_txt_login"
-            android:layout_height="@dimen/height_btn_login"
-            android:layout_below="@+id/passwordInput"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/margintop_username"
-            android:background="@color/color_green"
-            android:text="@string/btntxt_login"
-            android:textAllCaps="false"
-            android:textColor="@color/whitecolor"
-            android:textSize="@dimen/fontsize_login"/>
-
-        <TextView
-
-
-            android:id="@+id/txtv_forgot"
-            android:layout_width="@dimen/width_txt_login"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_login"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/margintop_forgot"
-            android:layout_marginBottom="@dimen/marginbottom_username"
-            android:text="@string/label_forgot"
-            android:textAlignment="center"
-            android:textColor="@color/colorscams"
-            android:textSize="@dimen/fontsize_login"/>
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtv_forgot"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/margintop_login"
-            android:background="@color/bgbtn_buttoncreate"
-            android:padding="@dimen/padding_txt_login"
-            android:text="@string/btntxt_createa"
-            android:textAllCaps="false"
-            android:textColor="@color/whitecolor"/>
-
-
-    </RelativeLayout>
-</LinearLayout>
-
+</android.support.constraint.ConstraintLayout>
